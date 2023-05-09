@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		313DF11A2A0A33B5005311FA /* swiftui_viewmodifier_presentationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DF1192A0A33B5005311FA /* swiftui_viewmodifier_presentationApp.swift */; };
-		313DF11C2A0A33B5005311FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DF11B2A0A33B5005311FA /* ContentView.swift */; };
+		313BA8DE2A0A6CCE00CA4369 /* _Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BA8DD2A0A6CCE00CA4369 /* _Preview.swift */; };
+		313BA8E42A0A786D00CA4369 /* bill-murray.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 313BA8E32A0A785000CA4369 /* bill-murray.jpeg */; };
+		313BA8E52A0A786F00CA4369 /* big-buck-bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 313BA8E22A0A785000CA4369 /* big-buck-bunny.mp4 */; };
+		313DF11A2A0A33B5005311FA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DF1192A0A33B5005311FA /* App.swift */; };
 		313DF11E2A0A33B7005311FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 313DF11D2A0A33B7005311FA /* Assets.xcassets */; };
 		313DF1212A0A33B7005311FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 313DF1202A0A33B7005311FA /* Preview Assets.xcassets */; };
+		313DF12A2A0A33EA005311FA /* DeckUI in Frameworks */ = {isa = PBXBuildFile; productRef = 313DF1292A0A33EA005311FA /* DeckUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		313BA8DD2A0A6CCE00CA4369 /* _Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Preview.swift; sourceTree = "<group>"; };
+		313BA8E22A0A785000CA4369 /* big-buck-bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "big-buck-bunny.mp4"; sourceTree = "<group>"; };
+		313BA8E32A0A785000CA4369 /* bill-murray.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bill-murray.jpeg"; sourceTree = "<group>"; };
 		313DF1162A0A33B5005311FA /* swiftui-viewmodifier-presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-viewmodifier-presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		313DF1192A0A33B5005311FA /* swiftui_viewmodifier_presentationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_viewmodifier_presentationApp.swift; sourceTree = "<group>"; };
-		313DF11B2A0A33B5005311FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		313DF1192A0A33B5005311FA /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		313DF11D2A0A33B7005311FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		313DF1202A0A33B7005311FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		313DF1222A0A33B7005311FA /* swiftui_viewmodifier_presentation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swiftui_viewmodifier_presentation.entitlements; sourceTree = "<group>"; };
+		313DF1222A0A33B7005311FA /* presentations.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = presentations.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,16 +32,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313DF12A2A0A33EA005311FA /* DeckUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		313BA8DC2A0A6CB300CA4369 /* Decks */ = {
+			isa = PBXGroup;
+			children = (
+				313BA8DD2A0A6CCE00CA4369 /* _Preview.swift */,
+			);
+			path = Decks;
+			sourceTree = "<group>";
+		};
+		313BA8E12A0A785000CA4369 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				313BA8E22A0A785000CA4369 /* big-buck-bunny.mp4 */,
+				313BA8E32A0A785000CA4369 /* bill-murray.jpeg */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		313DF10D2A0A33B5005311FA = {
 			isa = PBXGroup;
 			children = (
-				313DF1182A0A33B5005311FA /* swiftui-viewmodifier-presentation */,
+				313DF1222A0A33B7005311FA /* presentations.entitlements */,
+				313DF1192A0A33B5005311FA /* App.swift */,
+				313DF11D2A0A33B7005311FA /* Assets.xcassets */,
+				313BA8DC2A0A6CB300CA4369 /* Decks */,
+				313BA8E12A0A785000CA4369 /* Media */,
+				313DF11F2A0A33B7005311FA /* Preview Content */,
 				313DF1172A0A33B5005311FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,18 +75,6 @@
 				313DF1162A0A33B5005311FA /* swiftui-viewmodifier-presentation.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		313DF1182A0A33B5005311FA /* swiftui-viewmodifier-presentation */ = {
-			isa = PBXGroup;
-			children = (
-				313DF1192A0A33B5005311FA /* swiftui_viewmodifier_presentationApp.swift */,
-				313DF11B2A0A33B5005311FA /* ContentView.swift */,
-				313DF11D2A0A33B7005311FA /* Assets.xcassets */,
-				313DF1222A0A33B7005311FA /* swiftui_viewmodifier_presentation.entitlements */,
-				313DF11F2A0A33B7005311FA /* Preview Content */,
-			);
-			path = "swiftui-viewmodifier-presentation";
 			sourceTree = "<group>";
 		};
 		313DF11F2A0A33B7005311FA /* Preview Content */ = {
@@ -85,6 +101,9 @@
 			dependencies = (
 			);
 			name = "swiftui-viewmodifier-presentation";
+			packageProductDependencies = (
+				313DF1292A0A33EA005311FA /* DeckUI */,
+			);
 			productName = "swiftui-viewmodifier-presentation";
 			productReference = 313DF1162A0A33B5005311FA /* swiftui-viewmodifier-presentation.app */;
 			productType = "com.apple.product-type.application";
@@ -104,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 313DF1112A0A33B5005311FA /* Build configuration list for PBXProject "swiftui-viewmodifier-presentation" */;
+			buildConfigurationList = 313DF1112A0A33B5005311FA /* Build configuration list for PBXProject "presentations" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 313DF10D2A0A33B5005311FA;
+			packageReferences = (
+				313DF1282A0A33EA005311FA /* XCRemoteSwiftPackageReference "deckui" */,
+			);
 			productRefGroup = 313DF1172A0A33B5005311FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				313DF1212A0A33B7005311FA /* Preview Assets.xcassets in Resources */,
+				313BA8E42A0A786D00CA4369 /* bill-murray.jpeg in Resources */,
+				313BA8E52A0A786F00CA4369 /* big-buck-bunny.mp4 in Resources */,
 				313DF11E2A0A33B7005311FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				313DF11C2A0A33B5005311FA /* ContentView.swift in Sources */,
-				313DF11A2A0A33B5005311FA /* swiftui_viewmodifier_presentationApp.swift in Sources */,
+				313DF11A2A0A33B5005311FA /* App.swift in Sources */,
+				313BA8DE2A0A6CCE00CA4369 /* _Preview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,13 +289,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "swiftui-viewmodifier-presentation/swiftui_viewmodifier_presentation.entitlements";
+				CODE_SIGN_ENTITLEMENTS = presentations.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftui-viewmodifier-presentation/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Displaying face\n";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,13 +315,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "swiftui-viewmodifier-presentation/swiftui_viewmodifier_presentation.entitlements";
+				CODE_SIGN_ENTITLEMENTS = presentations.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftui-viewmodifier-presentation/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Displaying face\n";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		313DF1112A0A33B5005311FA /* Build configuration list for PBXProject "swiftui-viewmodifier-presentation" */ = {
+		313DF1112A0A33B5005311FA /* Build configuration list for PBXProject "presentations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				313DF1232A0A33B7005311FA /* Debug */,
@@ -332,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		313DF1282A0A33EA005311FA /* XCRemoteSwiftPackageReference "deckui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joshdholtz/deckui";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		313DF1292A0A33EA005311FA /* DeckUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 313DF1282A0A33EA005311FA /* XCRemoteSwiftPackageReference "deckui" */;
+			productName = DeckUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 313DF10E2A0A33B5005311FA /* Project object */;
 }
