@@ -11,7 +11,7 @@ import SwiftUI
 @main
 struct PresentationApp: App {
     
-    let deck = Deck.preview
+    let deck = Deck.viewModifier
     @State var showCamera = false
     
     var body: some Scene {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312A706A2A0A82E00032CBF1 /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A70692A0A82E00032CBF1 /* ViewModifier.swift */; };
 		313BA8DE2A0A6CCE00CA4369 /* _Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BA8DD2A0A6CCE00CA4369 /* _Preview.swift */; };
 		313BA8E42A0A786D00CA4369 /* bill-murray.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 313BA8E32A0A785000CA4369 /* bill-murray.jpeg */; };
 		313BA8E52A0A786F00CA4369 /* big-buck-bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 313BA8E22A0A785000CA4369 /* big-buck-bunny.mp4 */; };
@@ -17,10 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		312A70692A0A82E00032CBF1 /* ViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
 		313BA8DD2A0A6CCE00CA4369 /* _Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Preview.swift; sourceTree = "<group>"; };
 		313BA8E22A0A785000CA4369 /* big-buck-bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "big-buck-bunny.mp4"; sourceTree = "<group>"; };
 		313BA8E32A0A785000CA4369 /* bill-murray.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bill-murray.jpeg"; sourceTree = "<group>"; };
-		313DF1162A0A33B5005311FA /* swiftui-viewmodifier-presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-viewmodifier-presentation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		313DF1162A0A33B5005311FA /* presentations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = presentations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		313DF1192A0A33B5005311FA /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		313DF11D2A0A33B7005311FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		313DF1202A0A33B7005311FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		313BA8DC2A0A6CB300CA4369 /* Decks */ = {
 			isa = PBXGroup;
 			children = (
+				312A70692A0A82E00032CBF1 /* ViewModifier.swift */,
 				313BA8DD2A0A6CCE00CA4369 /* _Preview.swift */,
 			);
 			path = Decks;
@@ -72,7 +75,7 @@
 		313DF1172A0A33B5005311FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				313DF1162A0A33B5005311FA /* swiftui-viewmodifier-presentation.app */,
+				313DF1162A0A33B5005311FA /* presentations.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		313DF1152A0A33B5005311FA /* swiftui-viewmodifier-presentation */ = {
+		313DF1152A0A33B5005311FA /* presentations */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 313DF1252A0A33B7005311FA /* Build configuration list for PBXNativeTarget "swiftui-viewmodifier-presentation" */;
+			buildConfigurationList = 313DF1252A0A33B7005311FA /* Build configuration list for PBXNativeTarget "presentations" */;
 			buildPhases = (
 				313DF1122A0A33B5005311FA /* Sources */,
 				313DF1132A0A33B5005311FA /* Frameworks */,
@@ -100,12 +103,12 @@
 			);
 			dependencies = (
 			);
-			name = "swiftui-viewmodifier-presentation";
+			name = presentations;
 			packageProductDependencies = (
 				313DF1292A0A33EA005311FA /* DeckUI */,
 			);
 			productName = "swiftui-viewmodifier-presentation";
-			productReference = 313DF1162A0A33B5005311FA /* swiftui-viewmodifier-presentation.app */;
+			productReference = 313DF1162A0A33B5005311FA /* presentations.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				313DF1152A0A33B5005311FA /* swiftui-viewmodifier-presentation */,
+				313DF1152A0A33B5005311FA /* presentations */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				313DF11A2A0A33B5005311FA /* App.swift in Sources */,
+				312A706A2A0A82E00032CBF1 /* ViewModifier.swift in Sources */,
 				313BA8DE2A0A6CCE00CA4369 /* _Preview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		313DF1252A0A33B7005311FA /* Build configuration list for PBXNativeTarget "swiftui-viewmodifier-presentation" */ = {
+		313DF1252A0A33B7005311FA /* Build configuration list for PBXNativeTarget "presentations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				313DF1262A0A33B7005311FA /* Debug */,
