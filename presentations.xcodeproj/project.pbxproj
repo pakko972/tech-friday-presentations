@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		312A706A2A0A82E00032CBF1 /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A70692A0A82E00032CBF1 /* ViewModifier.swift */; };
-		313BA8DE2A0A6CCE00CA4369 /* _Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BA8DD2A0A6CCE00CA4369 /* _Preview.swift */; };
+		313BA8DE2A0A6CCE00CA4369 /* _Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BA8DD2A0A6CCE00CA4369 /* _Demo.swift */; };
 		313BA8E42A0A786D00CA4369 /* bill-murray.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 313BA8E32A0A785000CA4369 /* bill-murray.jpeg */; };
 		313BA8E52A0A786F00CA4369 /* big-buck-bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 313BA8E22A0A785000CA4369 /* big-buck-bunny.mp4 */; };
 		313DF11A2A0A33B5005311FA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DF1192A0A33B5005311FA /* App.swift */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		312A70692A0A82E00032CBF1 /* ViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
-		313BA8DD2A0A6CCE00CA4369 /* _Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Preview.swift; sourceTree = "<group>"; };
+		313BA8DD2A0A6CCE00CA4369 /* _Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Demo.swift; sourceTree = "<group>"; };
 		313BA8E22A0A785000CA4369 /* big-buck-bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "big-buck-bunny.mp4"; sourceTree = "<group>"; };
 		313BA8E32A0A785000CA4369 /* bill-murray.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bill-murray.jpeg"; sourceTree = "<group>"; };
 		313DF1162A0A33B5005311FA /* presentations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = presentations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,8 +44,8 @@
 		313BA8DC2A0A6CB300CA4369 /* Decks */ = {
 			isa = PBXGroup;
 			children = (
+				313BA8DD2A0A6CCE00CA4369 /* _Demo.swift */,
 				312A70692A0A82E00032CBF1 /* ViewModifier.swift */,
-				313BA8DD2A0A6CCE00CA4369 /* _Preview.swift */,
 			);
 			path = Decks;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			files = (
 				313DF11A2A0A33B5005311FA /* App.swift in Sources */,
 				312A706A2A0A82E00032CBF1 /* ViewModifier.swift in Sources */,
-				313BA8DE2A0A6CCE00CA4369 /* _Preview.swift in Sources */,
+				313BA8DE2A0A6CCE00CA4369 /* _Demo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

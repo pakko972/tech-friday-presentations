@@ -29,14 +29,3 @@ struct PresentationApp: App {
         }
     }
 }
-
-struct PresentationApp_Previews: PreviewProvider {
-    static var previews: some View {
-        VStack(spacing: 0) {
-            let deck = Deck.preview
-            let slide = deck.slides()[0]
-            slide.buildView(theme: deck.theme)
-                .frame(width: 1200, height: 800)
-        }
-    }
-}

@@ -9,7 +9,7 @@ import SwiftUI
 import DeckUI
 
 extension Deck {
-    static var preview: Deck {
+    static var demo: Deck {
         Deck(title: "DeckUI Demo") {
             Slide(alignment: .center, comment: "Here are some presenter notes") {
                 Title("Introducing...")
