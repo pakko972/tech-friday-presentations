@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310BC06E2A41EF380053AA3C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310BC06D2A41EF380053AA3C /* Media.xcassets */; };
+		310BC0702A4334B40053AA3C /* DeckUI+BNPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310BC06F2A4334B40053AA3C /* DeckUI+BNPP.swift */; };
 		312A706A2A0A82E00032CBF1 /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A70692A0A82E00032CBF1 /* ViewModifier.swift */; };
-		313BA8DE2A0A6CCE00CA4369 /* _Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BA8DD2A0A6CCE00CA4369 /* _Demo.swift */; };
+		313BA8DE2A0A6CCE00CA4369 /* DemoDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BA8DD2A0A6CCE00CA4369 /* DemoDeck.swift */; };
 		313BA8E42A0A786D00CA4369 /* bill-murray.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 313BA8E32A0A785000CA4369 /* bill-murray.jpeg */; };
 		313BA8E52A0A786F00CA4369 /* big-buck-bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 313BA8E22A0A785000CA4369 /* big-buck-bunny.mp4 */; };
 		313DF11A2A0A33B5005311FA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DF1192A0A33B5005311FA /* App.swift */; };
@@ -19,8 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		310BC06D2A41EF380053AA3C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		310BC06F2A4334B40053AA3C /* DeckUI+BNPP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeckUI+BNPP.swift"; sourceTree = "<group>"; };
+		310BC0722A4334F60053AA3C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		312A70692A0A82E00032CBF1 /* ViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
-		313BA8DD2A0A6CCE00CA4369 /* _Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Demo.swift; sourceTree = "<group>"; };
+		313BA8DD2A0A6CCE00CA4369 /* DemoDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDeck.swift; sourceTree = "<group>"; };
 		313BA8E22A0A785000CA4369 /* big-buck-bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "big-buck-bunny.mp4"; sourceTree = "<group>"; };
 		313BA8E32A0A785000CA4369 /* bill-murray.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bill-murray.jpeg"; sourceTree = "<group>"; };
 		313DF1162A0A33B5005311FA /* presentations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = presentations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,12 +48,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		310BC0712A4334E80053AA3C /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				310BC0722A4334F60053AA3C /* Media.xcassets */,
+				312A70692A0A82E00032CBF1 /* ViewModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		313BA8DC2A0A6CB300CA4369 /* Decks */ = {
 			isa = PBXGroup;
 			children = (
+				310BC0712A4334E80053AA3C /* ViewModifiers */,
 				317E561C2A40AA3200653859 /* DesignerWithSwiftUI */,
-				313BA8DD2A0A6CCE00CA4369 /* _Demo.swift */,
-				312A70692A0A82E00032CBF1 /* ViewModifier.swift */,
 			);
 			path = Decks;
 			sourceTree = "<group>";
@@ -67,6 +80,8 @@
 			children = (
 				313DF1222A0A33B7005311FA /* presentations.entitlements */,
 				313DF1192A0A33B5005311FA /* App.swift */,
+				310BC06F2A4334B40053AA3C /* DeckUI+BNPP.swift */,
+				313BA8DD2A0A6CCE00CA4369 /* DemoDeck.swift */,
 				313DF11D2A0A33B7005311FA /* Assets.xcassets */,
 				313BA8DC2A0A6CB300CA4369 /* Decks */,
 				313BA8E12A0A785000CA4369 /* Media */,
@@ -95,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				317E561F2A40AA4800653859 /* DesignerWithSwiftUI.swift */,
+				310BC06D2A41EF380053AA3C /* Media.xcassets */,
 			);
 			path = DesignerWithSwiftUI;
 			sourceTree = "<group>";
@@ -163,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				310BC06E2A41EF380053AA3C /* Media.xcassets in Resources */,
 				313DF1212A0A33B7005311FA /* Preview Assets.xcassets in Resources */,
 				313BA8E42A0A786D00CA4369 /* bill-murray.jpeg in Resources */,
 				313BA8E52A0A786F00CA4369 /* big-buck-bunny.mp4 in Resources */,
@@ -179,7 +196,8 @@
 			files = (
 				313DF11A2A0A33B5005311FA /* App.swift in Sources */,
 				312A706A2A0A82E00032CBF1 /* ViewModifier.swift in Sources */,
-				313BA8DE2A0A6CCE00CA4369 /* _Demo.swift in Sources */,
+				310BC0702A4334B40053AA3C /* DeckUI+BNPP.swift in Sources */,
+				313BA8DE2A0A6CCE00CA4369 /* DemoDeck.swift in Sources */,
 				317E56202A40AA4800653859 /* DesignerWithSwiftUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
