@@ -51,8 +51,8 @@
 		310BC0712A4334E80053AA3C /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
-				310BC0722A4334F60053AA3C /* Media.xcassets */,
 				312A70692A0A82E00032CBF1 /* ViewModifier.swift */,
+				310BC0722A4334F60053AA3C /* Media.xcassets */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";

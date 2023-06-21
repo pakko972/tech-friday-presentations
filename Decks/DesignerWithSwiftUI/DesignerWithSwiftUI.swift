@@ -9,6 +9,7 @@ import SwiftUI
 import DeckUI
 
 extension Presentations {
+    /// Presentation given by @pakko972 at the UX/UI plenary session at V2 on 3023-06-21
     static func designWithSwiftUI(showCamera: Bool = false) -> some View {
         GeometryReader { geo in
             VStack(spacing: 0) {
