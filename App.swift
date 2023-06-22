@@ -6,26 +6,41 @@
 //
 
 import SwiftUI
-@testable import DeckUI
+import DeckUI
 
 @main
 struct PresentationApp: App {
+
+    let disableAnimations = true
     
-    let deck = Deck.viewModifier
+    let showTitleBar = true
+    
+    let showCameraButton = false
     @State var showCamera = false
+    
+    @ViewBuilder
+    var presentation: some View {
+        Presentations.designWithSwiftUI(showCamera: showCamera)
+    }
     
     var body: some Scene {
         WindowGroup {
-            Presenter(deck: deck, showCamera: showCamera)
+            presentation
+                .animation(disableAnimations ? nil : .default)
                 .toolbar {
-                    ToolbarItemGroup {
-                        Button {
-                            showCamera = !showCamera
-                        } label: {
-                            Image(systemName: "camera.fill")
+                    if showCameraButton {
+                        ToolbarItemGroup {
+                            Button {
+                                showCamera = !showCamera
+                            } label: {
+                                Image(systemName: "camera.fill")
+                            }
                         }
                     }
                 }
         }
+        .windowStyle(.hiddenTitleBar)
+        
+        PresenterNotes()
     }
 }
