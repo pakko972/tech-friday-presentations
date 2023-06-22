@@ -15,6 +15,7 @@ extension Presentations {
             VStack(spacing: 0) {
                 Presenter(
                     deck: .designWithSwiftUI,
+                    slideTransition: nil,
                     defaultResolution: (geo.size.width/2, geo.size.height/2),
                     showCamera: showCamera
                 )
@@ -119,7 +120,8 @@ extension Deck {
             Slide {
                 Title("Building Blocks", subtitle: "Simple things should be simple, complex things should be possible")
                 
-                Media(.bundleImage("blocks"))
+                Media(.assetImage("blocks"))
+                Words("Credits: Suzy Hazelwood", font: .footnote)
             }
             
             Slide {
@@ -131,7 +133,8 @@ extension Deck {
                     """
                 }
                 
-                Media(.bundleImage("calligraphie"))
+                Media(.assetImage("words"))
+                Words("Credits: Miguel Á. Padriñán", font: .footnote)
             }
             
             Slide {
@@ -246,7 +249,8 @@ extension Deck {
                     Words("Interactions/Gestes")
                 }
                 
-                Media(.bundleImage("designer-tool"))
+                Media(.assetImage("designer-tool"))
+                Words("Credits: Apple", font: .footnote)
             }
             
             Slide(alignment: .center) {
@@ -266,7 +270,8 @@ extension Deck {
             Slide {
                 Title("Case Study", subtitle: "Mettons les mains dans le cambouis !")
                 
-                Media(.bundleImage("coding"))
+                Media(.assetImage("coding"))
+                Words("Credit: Markus Spiske", font: .footnote)
             }
             
             Slide {

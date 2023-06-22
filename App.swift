@@ -11,8 +11,6 @@ import DeckUI
 @main
 struct PresentationApp: App {
 
-    let disableAnimations = true
-    
     let showTitleBar = true
     
     let showCameraButton = false
@@ -26,7 +24,6 @@ struct PresentationApp: App {
     var body: some Scene {
         WindowGroup {
             presentation
-                .animation(disableAnimations ? nil : .default)
                 .toolbar {
                     if showCameraButton {
                         ToolbarItemGroup {

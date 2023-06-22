@@ -60,8 +60,8 @@
 		313BA8DC2A0A6CB300CA4369 /* Decks */ = {
 			isa = PBXGroup;
 			children = (
-				310BC0712A4334E80053AA3C /* ViewModifiers */,
 				317E561C2A40AA3200653859 /* DesignerWithSwiftUI */,
+				310BC0712A4334E80053AA3C /* ViewModifiers */,
 			);
 			path = Decks;
 			sourceTree = "<group>";
